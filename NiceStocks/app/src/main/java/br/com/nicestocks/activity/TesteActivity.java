@@ -1,10 +1,9 @@
 package br.com.nicestocks.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -13,14 +12,13 @@ import br.com.nicestocks.R;
 import br.com.nicestocks.controller.StockCardAdapter;
 import br.com.nicestocks.model.Stocks;
 
-public class HomeActivity extends AppCompatActivity {
-
+public class TesteActivity extends AppCompatActivity {
     private StockCardAdapter stockAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.teste);
 
         try {
             stockAdapter = new StockCardAdapter(new ArrayList<>(Stocks.fakeStocks()));
@@ -28,7 +26,7 @@ public class HomeActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        RecyclerView rv = findViewById(R.id.recyclerViewStockCard);
+        RecyclerView rv = findViewById(R.id.recyclerViewStockTeste);
         rv.setAdapter(stockAdapter);
     }
 }

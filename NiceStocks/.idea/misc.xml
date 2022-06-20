@@ -18,10 +18,23 @@
         <entry key="..\:/Users/igorc/AndroidStudioProjects/MiaAcoes/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/igorc/AndroidStudioProjects/MiaAcoes/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3675" />
         <entry key="..\:/Users/igorc/AndroidStudioProjects/MiaAcoes/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3675" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/drawable/custom_button.xml" value="0.2925" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/drawable/custom_card_stock.xml" value="0.3665" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/drawable/custom_email_icon.xml" value="0.3675" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/drawable/custom_lock_icon.xml" value="0.2925" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/drawable/custom_menu_bar.xml" value="0.2915" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/drawable/custom_scroll_list.xml" value="0.3675" />
         <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/drawable/ic_email_24.xml" value="0.2925" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/drawable/ic_email_fucused_24.xml" value="0.2925" />
         <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/drawable/ic_eye_16.xml" value="0.2925" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/drawable/ic_google_icon_130924.xml" value="0.2925" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2925" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/drawable/ic_stock_wallet_32.xml" value="0.2925" />
         <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/layout/activity_home.xml" value="0.33" />
         <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/layout/card_stock_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/layout/teste.xml" value="0.2875" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/menu/bottom_navigation.xml" value="0.28854166666666664" />
       </map>
     </option>
   </component>
