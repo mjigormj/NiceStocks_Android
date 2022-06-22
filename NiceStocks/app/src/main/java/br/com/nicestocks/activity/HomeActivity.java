@@ -22,11 +22,13 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+
         try {
             stockAdapter = new StockCardAdapter(new ArrayList<>(Stocks.fakeStocks()));
         } catch (IOException e) {
             e.printStackTrace();
         }
+
 
         RecyclerView rv = findViewById(R.id.recyclerViewStockCard);
         rv.setAdapter(stockAdapter);

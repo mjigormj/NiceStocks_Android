@@ -11,24 +11,15 @@ public class Stock {
     private Double marcketValue = 0.0;
     private Double avgCust = 0.0;
     private Double totalPrice = 0.0;
-    private Double moneyEarned = 0.0;
     private int stockQtd = 0;
     private Document doc;
-    private Double avgPrice;
 
     public void stock(String name) throws Exception {
         this.setName(name);
-        this.setDoc(Jsoup.connect("https://www.google.com/finance/quote/" + this.getName() + ":BVMF").get());
+        //this.setDoc(Jsoup.connect("https://www.google.com/finance/quote/" + this.getName() + ":BVMF").get());
+
         this.setMarcketValue();
     }
-
-        /*public String dayRange() {
-            return getDoc().getElementsByClass("P6K39c").get(1).text();
-        }
-
-        public String percentVariance() {
-            return getDoc().getElementsByClass("JwB6zf").get(17).text();
-        }*/
 
     // Metodos especiais
     public String getName() {
@@ -39,12 +30,6 @@ public class Stock {
         this.name = name.toUpperCase();
     }
 
-    /*public Double getAvgPrice() {
-        return avgPrice;
-    }
-    public void setAvgPrice(Double marcketValue, int stockQtd) {
-        this.avgPrice = marcketValue/stockQtd;
-    }*/
     public Document getDoc() {
         return doc;
     }
@@ -86,14 +71,6 @@ public class Stock {
         this.totalPrice = marcketValue * stockQtd;
     }
 
-    public Double getMoneyEarned() {
-        return moneyEarned;
-    }
-
-    public void setMoneyEarned(Double moneyEarned) {
-        this.moneyEarned = moneyEarned;
-    }
-
     //Builder
 
     public static class StockBuilder {
@@ -101,10 +78,8 @@ public class Stock {
         private Double marcketValue = 0.0;
         private Double avgCust = 0.0;
         private Double totalPrice = 0.0;
-        private Double moneyEarned = 0.0;
         private int stockQtd = 0;
         private Document doc;
-        private Double avgPrice;
 
         public StockBuilder setName(String name) {
             this.name = name;
@@ -126,23 +101,13 @@ public class Stock {
             return this;
         }
 
-        public StockBuilder setMoneyEarned(Double moneyEarned) {
-            this.moneyEarned = moneyEarned;
-            return this;
-        }
-
         public StockBuilder setStockQtd(int stockQtd) {
             this.stockQtd = stockQtd;
             return this;
         }
 
-        public StockBuilder setDoc(Document doc) {
-            this.doc = doc;
-            return this;
-        }
-
-        public StockBuilder setAvgPrice(Double avgPrice) {
-            this.avgPrice = avgPrice;
+        public StockBuilder setDoc(Document doc) throws IOException {
+            this.doc =doc;
             return this;
         }
 
@@ -156,10 +121,8 @@ public class Stock {
             stock.marcketValue = marcketValue;
             stock.avgCust = avgCust;
             stock.totalPrice = totalPrice;
-            stock.moneyEarned = moneyEarned;
             stock.stockQtd = stockQtd;
             stock.doc = doc;
-            stock.avgPrice = avgPrice;
             return stock;
         }
     }

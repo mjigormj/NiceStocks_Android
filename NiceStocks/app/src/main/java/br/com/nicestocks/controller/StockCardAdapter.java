@@ -31,25 +31,16 @@ public class StockCardAdapter extends RecyclerView.Adapter<StockCardAdapter.Stoc
 
     @Override
     public void onBindViewHolder(@NonNull StockViewHolder holder, int position) {
-        Stock stock = stocks.get(0);
+        Stock stock = stocks.get(position);
         holder.bind(stock);
-
-        /*final Stock stockList = stocks[position];
-        holder.tVStockWalletPercent.setText("0%");
-        holder.tVStockQtd.setText(stockList.getStockQtd());
-        holder.tVStockAvgPrice.setText( "price/qtd");
-        holder.tVStockAvgCust.setText(stockList.getAvgCust().toString());
-        holder.tVStockMarcketValue.setText(stockList.getMarcketValue().toString());
-        holder.tVStockValueWallet.setText(stockList.getTotalPrice().toString());
-        holder.tVStockValueEarned.setText(stockList.getMoneyEarned().toString());*/
     }
 
     @Override
     public int getItemCount() {
-        return stocks.size();
+        return stocks.size() ;
     }
 
-    public class StockViewHolder extends RecyclerView.ViewHolder {
+    public static class StockViewHolder extends RecyclerView.ViewHolder {
         TextView tVStockName;
         TextView tVStockWalletPercent;
         TextView tVStockQtd;
@@ -70,8 +61,15 @@ public class StockCardAdapter extends RecyclerView.Adapter<StockCardAdapter.Stoc
             tVStockValueWallet = itemView.findViewById(R.id.stockValueWallet);
             tVStockValueEarned = itemView.findViewById(R.id.stockValueEarned);
         }
-        public void bind(Stock stock) {
-
+        public void bind(@NonNull Stock stock) {
+            String name = stock.getName();
+            tVStockName.setText(name);
+            tVStockWalletPercent.setText("0%");
+            tVStockAvgPrice.setText( "price/qtd");
+            /*tVStockQtd.setText(stock.getStockQtd());
+            tVStockAvgCust.setText(stock.getAvgCust().toString());
+            tVStockMarcketValue.setText(stock.getMarcketValue().toString());
+            tVStockValueWallet.setText(stock.getTotalPrice().toString());*/
         }
 
 

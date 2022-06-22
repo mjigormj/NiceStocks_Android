@@ -10,23 +10,35 @@ public class Stocks {
     public static List<Stock> fakeStocks() throws IOException {
         return Arrays.asList(
                 Stock.StockBuilder.builder()
-                        .setName("CPTS11")
-                        .setAvgPrice(97.0)
+                        .setName("NUBR33")
                         .setStockQtd(12)
-                        .setDoc(Jsoup.connect("https://www.google.com/finance/quote/" + "CPTS11" + ":BVMF").get())
+                        //.setDoc("CPTS11")
                         .setMarcketValue(97.1)
                         .setAvgCust(97.1)
-                        .setMoneyEarned(97.1)
                         .build(),
 
                 Stock.StockBuilder.builder()
                         .setName("PETR4")
-                        .setAvgPrice(97.0)
                         .setStockQtd(12)
-                        .setDoc(Jsoup.connect("https://www.google.com/finance/quote/" + "CPTS11" + ":BVMF").get())
+                        //.setDoc("CPTS11")
                         .setMarcketValue(97.1)
                         .setAvgCust(97.1)
-                        .setMoneyEarned(97.1)
+                        .build(),
+
+                Stock.StockBuilder.builder()
+                        .setName("CPTS11")
+                        .setStockQtd(12)
+                        //.setDoc("CPTS11")
+                        .setMarcketValue(97.1)
+                        .setAvgCust(97.1)
+                        .build(),
+
+                Stock.StockBuilder.builder()
+                        .setName("CMIN3")
+                        .setStockQtd(12)
+                        //.setDoc("CPTS11")
+                        .setMarcketValue(97.1)
+                        .setAvgCust(97.1)
                         .build()
         );
     }
