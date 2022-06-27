@@ -1,5 +1,7 @@
 package br.com.nicestocks.controller;
 
+import android.app.Activity;
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,14 +13,17 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 import br.com.nicestocks.R;
+import br.com.nicestocks.activity.MainActivity;
 import br.com.nicestocks.model.Stock;
 
 public class StockCardAdapter extends RecyclerView.Adapter<StockCardAdapter.StockViewHolder> {
 
-    private final List<Stock> stocks;
+    private List<Stock> stocks;
+    private Context context;
 
-    public StockCardAdapter(List<Stock> stocks) {
+    public StockCardAdapter(List<Stock> stocks, Context context) {
         this.stocks = stocks;
+        this.context = context;
     }
 
     @NonNull
@@ -26,18 +31,27 @@ public class StockCardAdapter extends RecyclerView.Adapter<StockCardAdapter.Stoc
     public StockViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(
                 R.layout.card_stock_layout, parent, false);
+
         return new StockViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull StockViewHolder holder, int position) {
         Stock stock = stocks.get(position);
-        holder.bind(stock);
+        holder.tVStockName.setText(stock.getName());
+        holder.tVStockWalletPercent.setText("0%");
+        holder.tVStockAvgPrice.setText("price/qtd");
+        holder.tVStockQtd.setText(String.valueOf(stock.getStockQtd()));
+        holder.tVStockMarcketValue.setText(String.valueOf(stock.getMarcketValue()));
+        holder.tVStockAvgCust.setText(stock.getAvgCust().toString());
+        holder.tVStockValueWallet.setText(stock.getTotalPrice().toString());
+
+        //holder.bind(stock);
     }
 
     @Override
     public int getItemCount() {
-        return stocks.size() ;
+        return stocks.size();
     }
 
     public static class StockViewHolder extends RecyclerView.ViewHolder {
@@ -50,6 +64,7 @@ public class StockCardAdapter extends RecyclerView.Adapter<StockCardAdapter.Stoc
         TextView tVStockValueWallet;
         TextView tVStockValueEarned;
 
+
         public StockViewHolder(@NonNull View itemView) {
             super(itemView);
             tVStockName = itemView.findViewById(R.id.stockName);
@@ -61,16 +76,18 @@ public class StockCardAdapter extends RecyclerView.Adapter<StockCardAdapter.Stoc
             tVStockValueWallet = itemView.findViewById(R.id.stockValueWallet);
             tVStockValueEarned = itemView.findViewById(R.id.stockValueEarned);
         }
-        public void bind(@NonNull Stock stock) {
-            String name = stock.getName();
-            tVStockName.setText(name);
+
+        /*public void bind(@NonNull Stock stock) {
+
+            tVStockName.setText(stock.getName());
             tVStockWalletPercent.setText("0%");
-            tVStockAvgPrice.setText( "price/qtd");
-            /*tVStockQtd.setText(stock.getStockQtd());
+            tVStockAvgPrice.setText("price/qtd");
+            tVStockQtd.setText(String.valueOf(stock.getStockQtd()));
+            tVStockMarcketValue.setText(String.valueOf(stock.getMarcketValue()));
             tVStockAvgCust.setText(stock.getAvgCust().toString());
-            tVStockMarcketValue.setText(stock.getMarcketValue().toString());
-            tVStockValueWallet.setText(stock.getTotalPrice().toString());*/
-        }
+            tVStockValueWallet.setText(stock.getTotalPrice().toString());
+
+        }*/
 
 
     }

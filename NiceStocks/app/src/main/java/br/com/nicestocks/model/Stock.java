@@ -1,25 +1,21 @@
 package br.com.nicestocks.model;
 
-import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
 import java.io.IOException;
 
 public class Stock {
-
     private String name;
-    private Double marcketValue = 0.0;
+    private String marcketValue = "";
     private Double avgCust = 0.0;
     private Double totalPrice = 0.0;
     private int stockQtd = 0;
-    private Document doc;
+    private Document doc = null;
 
-    public void stock(String name) throws Exception {
-        this.setName(name);
-        //this.setDoc(Jsoup.connect("https://www.google.com/finance/quote/" + this.getName() + ":BVMF").get());
-
-        this.setMarcketValue();
+    private Stock stock() throws Exception {
+        return this;
     }
+
 
     // Metodos especiais
     public String getName() {
@@ -34,7 +30,7 @@ public class Stock {
         return doc;
     }
 
-    public void setDoc(Document doc) throws IOException {
+    public void setDoc(Document doc) throws Exception {
         this.doc = doc;
     }
 
@@ -55,12 +51,12 @@ public class Stock {
         this.stockQtd = stockQtd;
     }
 
-    public Double getMarcketValue() {
+    public String getMarcketValue() {
         return marcketValue;
     }
 
-    public void setMarcketValue() {
-        this.marcketValue = Double.parseDouble(this.getDoc().getElementsByClass("YMlKec fxKbKc").text().replace("R$", ""));
+    public void setMarcketValue(String setMarcketValue) {
+        this.marcketValue = setMarcketValue;
     }
 
     public Double getTotalPrice() {
@@ -75,7 +71,7 @@ public class Stock {
 
     public static class StockBuilder {
         private String name;
-        private Double marcketValue = 0.0;
+        private String marcketValue;
         private Double avgCust = 0.0;
         private Double totalPrice = 0.0;
         private int stockQtd = 0;
@@ -86,7 +82,7 @@ public class Stock {
             return this;
         }
 
-        public StockBuilder setMarcketValue(Double marcketValue) {
+        public StockBuilder setMarcketValue(String marcketValue) {
             this.marcketValue = marcketValue;
             return this;
         }
@@ -106,8 +102,8 @@ public class Stock {
             return this;
         }
 
-        public StockBuilder setDoc(Document doc) throws IOException {
-            this.doc =doc;
+        public StockBuilder setDoc() throws IOException {
+            this.doc = doc;
             return this;
         }
 
@@ -118,12 +114,13 @@ public class Stock {
         public Stock build() {
             Stock stock = new Stock();
             stock.name = name;
-            stock.marcketValue = marcketValue;
             stock.avgCust = avgCust;
             stock.totalPrice = totalPrice;
             stock.stockQtd = stockQtd;
+            stock.marcketValue = marcketValue;
             stock.doc = doc;
             return stock;
         }
+
     }
 }

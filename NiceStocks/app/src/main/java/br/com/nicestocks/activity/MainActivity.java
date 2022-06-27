@@ -3,7 +3,10 @@ package br.com.nicestocks.activity;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -19,18 +22,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_main);
 
+    }
 
-        try {
-            stockCardAdapter = new StockCardAdapter(new ArrayList<>(Stocks.fakeStocks()));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        RecyclerView rv = findViewById(R.id.recyclerViewStockCard);
-        rv.setAdapter(stockCardAdapter);
-
-
+    public void goToHome(View view){
+        Intent intent1 = new Intent(getApplicationContext(), HomeActivity.class);
+        startActivity(intent1);
     }
 }
