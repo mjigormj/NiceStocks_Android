@@ -17,7 +17,7 @@ import br.com.nicestocks.controller.StockCardAdapter;
 import br.com.nicestocks.model.Stock;
 import br.com.nicestocks.model.Stocks;
 
-public class HomeActivity extends AppCompatActivity {
+public class SearchActivity extends AppCompatActivity {
     private RecyclerView rv;
     private StockCardAdapter stockAdapter;
     private ArrayList<Stock> stockList = new ArrayList<>();
@@ -25,7 +25,7 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_search);
 
         rv = findViewById(R.id.recyclerViewStockCard);
         Content content = new Content();
