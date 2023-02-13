@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NiceStocks</string>
+    <string name="logar_google">Google</string>
+    <string name="wallet_value">R$ 2.589,50</string>
+    <string name="valor_na_carteira">Valor na carteira</string>
+    <string name="perfil">perfil</string>
+    <string name="eye">eye</string>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/MiaAcoes/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.291" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/MiaAcoes/app/src/main/res/drawable/custom_button.xml" value="0.3195" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/MiaAcoes/app/src/main/res/drawable/custom_email_icon.xml" value="0.3665" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/MiaAcoes/app/src/main/res/drawable/custom_input.xml" value="0.3665" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/MiaAcoes/app/src/main/res/drawable/custom_lock_icon.xml" value="0.1" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/MiaAcoes/app/src/main/res/drawable/ic_email_24.xml" value="0.3675" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/MiaAcoes/app/src/main/res/drawable/ic_email_fucused_24.xml" value="0.3675" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/MiaAcoes/app/src/main/res/drawable/ic_facebook.xml" value="0.3675" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/MiaAcoes/app/src/main/res/drawable/ic_google_icon_130924.xml" value="0.291" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/MiaAcoes/app/src/main/res/drawable/ic_launcher_background.xml" value="0.291" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/MiaAcoes/app/src/main/res/drawable/ic_lock_24.xml" value="0.3675" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/MiaAcoes/app/src/main/res/drawable/ic_lock_focused_24.xml" value="0.3675" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/MiaAcoes/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/MiaAcoes/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3675" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/MiaAcoes/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3675" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/drawable-v24/custom_perfilPhoto.xml" value="0.288" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/drawable/custom_button.xml" value="0.2925" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/drawable/custom_card_stock.xml" value="0.3665" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/drawable/custom_email_icon.xml" value="0.3675" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/drawable/custom_lock_icon.xml" value="0.2925" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/drawable/custom_menu_bar.xml" value="0.2915" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/drawable/custom_scroll_list.xml" value="0.3675" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/drawable/ic_email_24.xml" value="0.2925" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/drawable/ic_email_fucused_24.xml" value="0.2925" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/drawable/ic_eye_16.xml" value="0.2925" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/drawable/ic_google_icon_130924.xml" value="0.2925" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2925" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/drawable/ic_stock_wallet_32.xml" value="0.2925" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/layout/activity_candlestick_chart.xml" value="0.33" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/layout/activity_search.xml" value="0.33" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/layout/candlestick_chart.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/layout/candlestick_chart_configure.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/layout/card_search_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/layout/card_stock_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/layout/teste.xml" value="0.2875" />
+        <entry key="..\:/Users/igorc/AndroidStudioProjects/NiceStocks/app/src/main/res/menu/bottom_navigation.xml" value="0.28854166666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.33" />
+      </ProjectState>
+    </option>
+  </component>
+</project>
